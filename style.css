@@ -93,6 +93,13 @@ h3, h3 > a, h4 > a{
 
 /* CSS per gli articoli, sia quelli in evidenza che gli altri */
 
+.articoli{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
 .blog-articoli-evidenza, .blog-articoli-total{
     display: flex;
     flex-direction: column;
@@ -121,9 +128,9 @@ h3, h3 > a, h4 > a{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0px 0px 20px;
     margin: 0px;
     background-color: rgba(64, 161, 176, 0.269);
+    padding-bottom: 20px;
 }
 
 .blog-articoli-evidenza article img, .blog-articoli-total article img{
@@ -138,6 +145,26 @@ h3, h3 > a, h4 > a{
 .blog-articoli-evidenza p, .blog-articoli-total p{
     height: 35%;
     padding: 5px 5px;
+}
+
+/* aside */
+.articoli-side-total-container{
+    display: flex;
+    height: 100%;
+}
+
+aside{
+    background-color: rgb(212, 198, 46);
+    width: 40%;
+}
+
+aside h3, aside p{
+    padding: 10px;
+    font-size: 15px;
+}
+
+aside h3{
+    text-align: center;
 }
 
 /* button e relativi hover */
